@@ -5,6 +5,9 @@ if [[ $EUID -ne 0 ]]; then
    exit 100
 fi
 
+apt-get update
+apt-get install -y vlc
+
 export PINOISEBOX_HOME_DIR=/opt/pinoisebox
 
 mkdir -p $PINOISEBOX_HOME_DIR/
