@@ -3,9 +3,11 @@ A noise machine using raspberry pi.
 
 ## Setup 
 ```
+sudo apt-get update
+sudo apt-get install -y vlc
 git clone https://github.com/ajmontag/pinoisebox.git
 cd pinoisebox
-./install.sh
+sudo ./install.sh
 ```
 
 ## Configure
