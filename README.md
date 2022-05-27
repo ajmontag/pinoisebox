@@ -9,4 +9,13 @@ cd pinoisebox
 ```
 
 ## Configure
-link any file to `/opt/pinoisebox/media/default.mp3` and it will loop playback on startup.
+Link any file to `/opt/pinoisebox/media/default.mp3` and it will loop playback on startup:
+```
+ln -s -f media/my-file.mp3 media/default.mp3
+```
+
+start/stop the service using systemctl:
+```
+sudo systemctl stop pinoisebox.service
+sudo systemctl start pinoisebox.service
+```
