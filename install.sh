@@ -13,17 +13,6 @@ mkdir -p $PINOISEBOX_HOME_DIR/src
 cp -r ./ $PINOISEBOX_HOME_DIR/src
 cd $PINOISEBOX_HOME_DIR
 
-# sudo apt-get install alsa-utils
-# apt-get install omxplayer
-
-#sudo apt-get update
-#sudo apt-get full-upgrade
-#sudo modprobe snd_bcm2835
-
-#/boot/config.txt
-#dtoverlay=audremap,enable_jack=on
-#aplay -s 5000 -c 2 -f S16_LE -r 44100 /dev/urandom
-
 # download media
 # https://mc2method.org/white-noise/
 
