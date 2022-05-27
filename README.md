@@ -21,3 +21,9 @@ start/stop the service using systemctl:
 sudo systemctl stop pinoisebox.service
 sudo systemctl start pinoisebox.service
 ```
+
+## Troubleshooting
+
+```
+journalctl -u pinoisebox.service -b
+```
