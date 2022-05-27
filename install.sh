@@ -24,10 +24,12 @@ cd $PINOISEBOX_HOME_DIR
 #dtoverlay=audremap,enable_jack=on
 #aplay -s 5000 -c 2 -f S16_LE -r 44100 /dev/urandom
 
+# download media
 # https://mc2method.org/white-noise/
-wget --no-check-certificate --directory-prefix=media https://mc2method.org/white-noise/download.php?file=33-Fan&length=60
 
-ln -s -f media/33-Fan-60min.mp3 media/default.mp3
+# fan 6
+wget --no-check-certificate --directory-prefix=media -O fan6.mp3 https://mc2method.org/white-noise/download.php?file=33-Fan&length=60
+ln -s -f media/fan6.mp3 media/default.mp3
 
 install src/*.service /etc/systemd/system/
 
