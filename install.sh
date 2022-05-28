@@ -10,17 +10,12 @@ fi
 
 export PINOISEBOX_HOME_DIR=/opt/pinoisebox
 
-mkdir -p $PINOISEBOX_HOME_DIR/
-mkdir -p $PINOISEBOX_HOME_DIR/media
-mkdir -p $PINOISEBOX_HOME_DIR/src
-cp -r ./ $PINOISEBOX_HOME_DIR/src
-cd $PINOISEBOX_HOME_DIR/media
+mkdir -p $PINOISEBOX_HOME_DIR
+cd $PINOISEBOX_HOME_DIR
 
-# download media
+# media from:
 # https://mc2method.org/white-noise/
 
-# fan 6
-wget --no-check-certificate -O fan6.mp3 https://mc2method.org/white-noise/download.php?file=33-Fan&length=60
 mpg123 -w fan6.wav fan6.mp3
 ln -s -f fan6.wav default.wav
 
