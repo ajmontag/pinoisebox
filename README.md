@@ -27,5 +27,5 @@ sudo systemctl start pinoisebox.service
 ## Troubleshooting
 
 ```
-journalctl -u pinoisebox.service -b
+journalctl -u pinoisebox.service -r
 ```
