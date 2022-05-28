@@ -16,7 +16,7 @@ cd $PINOISEBOX_HOME_DIR
 
 ln -s -f fan6.mp3 default.mp3
 
-install src/*.service /etc/systemd/system/
+install *.service /etc/systemd/system/
 
 systemctl daemon-reload
 systemctl enable pinoisebox.service
