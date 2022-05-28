@@ -11,6 +11,7 @@ fi
 export PINOISEBOX_HOME_DIR=/opt/pinoisebox
 
 mkdir -p $PINOISEBOX_HOME_DIR
+cp -r ./ $PINOISEBOX_HOME_DIR
 cd $PINOISEBOX_HOME_DIR
 
 # media from:
