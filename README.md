@@ -5,6 +5,8 @@ A noise machine using raspberry pi.
 ```
 sudo apt-get update
 sudo apt-get install -y vlc
+sudo apt-get install -y pulseaudio
+pulseaudio --start
 git clone https://github.com/ajmontag/pinoisebox.git
 cd pinoisebox
 sudo ./install.sh
