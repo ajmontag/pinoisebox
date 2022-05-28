@@ -13,8 +13,7 @@ After=network.target
 [Service]
 User=pi
 WorkingDirectory=/opt/pinoisebox
-# ExecStart=/usr/bin/python3 /opt/pinoisebox/src/pinoisebox/pinoisebox.py
-ExecStart=speaker-test -l 0 -t wav -w /opt/pinoisebox/media/default.wav
+ExecStart=cvlc --no-interact --loop /opt/pinoisebox/default.wav
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
