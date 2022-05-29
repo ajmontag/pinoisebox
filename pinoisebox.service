@@ -13,7 +13,7 @@ After=network.target
 [Service]
 User=pi
 WorkingDirectory=/opt/pinoisebox
-ExecStart=cvlc --no-interact --loop /opt/pinoisebox/default.mp3
+ExecStart=cvlc --no-interact --loop --sout-keep /opt/pinoisebox/default.mp3
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
